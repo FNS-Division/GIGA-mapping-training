@@ -1,6 +1,7 @@
 # GIGA-mapping-training
 
 ![Logo](https://www.itu.int/web/pp-18/assets/logo/itu_logo.png)
+
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg) 
 [![Python](https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white)](https://www.python.org/)
 [![QGIS](https://img.shields.io/badge/QGIS-589632.svg?style=flat&logo=QGIS&logoColor=white)](https://qgis.org/)
@@ -73,29 +74,29 @@ Each source has been chosen to provide reliable, up-to-date information while be
 ## Training agenda
 
 - **Day 1: Fundamentals of Geospatial Analysis**
-   - Introduction to QGIS [🔗](link/to/qgis): Get started with QGIS, a powerful open-source software for geospatial analysis that will be our main tool throughout the course.
-   - Geospatial Data Types [🔗](link/to/geodata): Master the fundamentals of vector, raster, and tabular data types, and understand when to use each format.
-   - Projections and Coordinate Systems [🔗](link/to/projections): Learn how to work with different map projections and coordinate systems to ensure accurate spatial analysis.
-   - Telecommunications Open Data [🔗](link/to/telecom): Discover various telecommunications data sources, their characteristics, and learn to evaluate their advantages and limitations.
-   - Practical Sessions:
-       - Open Data Collection [🔗](link/to/opendata): Master the tools and techniques for gathering telecommunications data from key sources like OpenStreetMap, GIGA Maps, and OpenCellID using APIs and QGIS plugins.
-       - Data Standardization [🔗](link/to/standards): Learn to prepare and clean data according to ITU Data Dictionaries standards using QGIS and SQL, ensuring it's ready for analysis.
-       - Proximity Analysis [🔗](link/to/proximity): Calculate distances between Points of Interest and existing infrastructure to help prioritize locations for infrastructure expansion and optimize deployment strategies. Creates graduated symbol maps showing distances to nearest infrastructure.
-       - Coverage Analysis [🔗](link/to/coverage): Map and analyze the geographic reach of existing mobile networks to identify areas with limited or no coverage. Generate coverage status maps by technology type (3G/4G/5G).
-       - Demand Analysis [🔗](link/to/demand): Calculate potential internet users and required throughput at each PoI using high-resolution population models that combine satellite imagery with census estimates. Includes analysis of population distribution within various buffer zones.
-   - Quizzes:
+   - **Introduction to QGIS** [🔗](link/to/qgis): Get started with QGIS, a powerful open-source software for geospatial analysis that will be our main tool throughout the course.
+   - **Geospatial Data Types** [🔗](link/to/geodata): Master the fundamentals of vector, raster, and tabular data types, and understand when to use each format.
+   - **Projections and Coordinate Systems** [🔗](link/to/projections): Learn how to work with different map projections and coordinate systems to ensure accurate spatial analysis.
+   - **Telecommunications Open Data** [🔗](link/to/telecom): Discover various telecommunications data sources, their characteristics, and learn to evaluate their advantages and limitations.
+   - **Practical Sessions**:
+       - **Open Data Collection** [🔗](link/to/opendata): Master the tools and techniques for gathering telecommunications data from key sources like OpenStreetMap, GIGA Maps, and OpenCellID using APIs and QGIS plugins.
+       - **Data Standardization** [🔗](link/to/standards): Learn to prepare and clean data according to ITU Data Dictionaries standards using QGIS and SQL, ensuring it's ready for analysis.
+       - **Proximity Analysis** [🔗](link/to/proximity): Calculate distances between Points of Interest and existing infrastructure to help prioritize locations for infrastructure expansion and optimize deployment strategies. Creates graduated symbol maps showing distances to nearest infrastructure.
+       - **Coverage Analysis** [🔗](link/to/coverage): Map and analyze the geographic reach of existing mobile networks to identify areas with limited or no coverage. Generate coverage status maps by technology type (3G/4G/5G).
+       - **Demand Analysis** [🔗](link/to/demand): Calculate potential internet users and required throughput at each PoI using high-resolution population models that combine satellite imagery with census estimates. Includes analysis of population distribution within various buffer zones.
+   - **Quizzes**:
        - Quiz on GIS and Data Sources [🔗](link/to/quiz1)
        - Quiz on Proxiity, Coverage and Demand Analysis [🔗](link/to/quiz1)
 
 - **Day 2: Advanced Applications, Business Planning and Python Integration**
-   - ICT Infrastructure Business Planning [🔗](link/to/planning): Learn about business planning tools to evaluate the commercial viability of an ICT infrastructure project. This module shows how GIS tools are useful to extract the information that allows to compute the revenues and costs associated with a product.
-   - Practical Sessions:
-       - Visibility Analysis [🔗](link/to/visibility): Evaluate line-of-sight between cell sites and points of interest, considering terrain and physical obstructions. Learn to assess feasibility of radio links and identify optimal locations for infrastructure deployment.
-       - Fiber Path Analysis [🔗](link/to/fiber): Learn to design efficient fiber networks by leveraging existing infrastructure and optimizing routes for cost-effectiveness.
-       - Python & Google Colab Introduction [🔗](link/to/python): Learn about the Pros and Cons of using QGIS versus a programmatic approach using Python. Learn about using Google Colab to launch Jupyter notebooks, and discover the main Python libraries for working with geospatial data.
-       - Cost Analysis [🔗](cost_modelling.ipynb) using Jupyter notebook `cost_modelling.ipynb` running on Google Colab. Learn to evaluate different technology options (fiber, cellular, point-to-point and satellite) and optimize deployment costs using microeconomic data. Calculate CapEx, OpEx, and potential revenues for different connectivity solutions.
-       - KeplerGL Visualization [🔗](link/to/kepler): Learn how to produce appealling visualizations using the online version of KeplerGL, a powerful suite of open-source visualization tools.
-   - Quizzes:
+   - **ICT Infrastructure Business Planning** [🔗](link/to/planning): Learn about business planning tools to evaluate the commercial viability of an ICT infrastructure project. This module shows how GIS tools are useful to extract the information that allows to compute the revenues and costs associated with a product.
+   - **Practical Sessions**:
+       - **Visibility Analysis** [🔗](link/to/visibility): Evaluate line-of-sight between cell sites and points of interest, considering terrain and physical obstructions. Learn to assess feasibility of radio links and identify optimal locations for infrastructure deployment.
+       - **Fiber Path Analysis** [🔗](link/to/fiber): Learn to design efficient fiber networks by leveraging existing infrastructure and optimizing routes for cost-effectiveness.
+       - **Python & Google Colab Introduction** [🔗](link/to/python): Learn about the Pros and Cons of using QGIS versus a programmatic approach using Python. Learn about using Google Colab to launch Jupyter notebooks, and discover the main Python libraries for working with geospatial data.
+       - **Cost Analysis** [🔗](cost_modelling.ipynb) using Jupyter notebook `cost_modelling.ipynb` running on Google Colab. Learn to evaluate different technology options (fiber, cellular, point-to-point and satellite) and optimize deployment costs using microeconomic data. Calculate CapEx, OpEx, and potential revenues for different connectivity solutions.
+       - **KeplerGL Visualization** [🔗](link/to/kepler): Learn how to produce appealling visualizations using the online version of KeplerGL, a powerful suite of open-source visualization tools.
+   - **Quizzes**:
        - Quiz on Business Planning [🔗](link/to/quiz2)
        - Quiz on Fiber Path and Visibility [🔗](link/to/quiz2)
 
