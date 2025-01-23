@@ -52,7 +52,7 @@ All training data is available in [this Google Drive folder](https://drive.googl
 - **outputs/**: Results from different analyses (proximity, coverage, demand, etc.)
 - **raster/**: Geographic raster files for elevation and population density
 
-<a href="https://ibb.co/8s8GT9K"><img src="https://i.ibb.co/jf4qBD6/windhoek-schools.png" alt="windhoek-schools" border="0"></a>
+[![windhoek-schools.png](https://i.postimg.cc/rwnjc01M/windhoek-schools.png)](https://postimg.cc/68ZnfQbm)
 
 _Figure: Query OpenStreetMaps using Overpass API_
 
