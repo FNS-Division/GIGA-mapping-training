@@ -1,0 +1,38 @@
+name: inframaptraining
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.11
+  - geopandas=1.0.1
+  - numpy=2.2.0
+  - pandas=2.2.3
+  - pandana=0.7
+  - plotly=5.24.1
+  - pycountry=24.6.1
+  - flake8=7.1.1
+  - autopep8=2.3.1
+  - pytest=8.3.4
+  - pytest-cov=6.0.0
+  - seaborn=0.13.2
+  - tifffile=2024.12.12
+  - osmnx=2.0.0
+  - ipykernel=6.29.5
+  - jupyterlab=4.3.3
+  - pulp=2.8.0
+  - sqlalchemy=2.0.36
+  - psycopg2=2.9.9
+  - scikit-learn=1.6.0
+  - scipy=1.14.1
+  - shapely=2.0.6
+  - tqdm=4.67.1
+  - pyyaml=6.0.2
+  - flake8-junit-report=2.1.0
+  - python-dotenv=1.0.1
+  - boto3=1.35.81
+  - pip
+  - pip:
+    - python-srtm==0.6.0
+    - spark-xarray==0.1.dev0
+    - geotiff==0.2.10
+    - contextily==1.6.2

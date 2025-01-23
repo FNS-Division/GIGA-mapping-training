@@ -1,5 +1,10 @@
 # GIGA-mapping-training
 
+![Logo](https://www.itu.int/web/pp-18/assets/logo/itu_logo.png)
+![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg) 
+[![Python](https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white)](https://www.python.org/)
+[![QGIS](https://img.shields.io/badge/QGIS-589632.svg?style=flat&logo=QGIS&logoColor=white)](https://qgis.org/)
+
 Training materials for an ITU course provided as part of the following event focusing on network infrastructure analysis and planning:
 
 [Infrastructure mapping for school connectivity](https://academy.itu.int/training-courses/full-catalogue/infrastructure-mapping-school-connectivity), Geneva – Switzerland, 27-28 February 2025
@@ -11,59 +16,107 @@ _Figure: Fiber path simulation in Windhoek, Namibia_
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [Repository Structure](#repository-structure)
-3. [Pre-requisites](#pre-requisites)
-4. [Setup Instructions](#setup-instructions)
-   - [Run Locally](#to-run-notebooks-locally)
-   - [Run on Google Colab](#to-run-notebooks-on-google-colab)
-5. [Usage Notes](#usage-notes)
+2. [Data](#data)
+  - [Data Repository](#data-repository)
+  - [Data Sources](#data-sources)
+3. [Training Agenda](#training-agenda)
+4. [Prerequisites](#prerequisites)
+  - [For Google Colab Users](#for-google-colab-users)
+  - [For Local Setup](#for-local-setup)
+5. [Setup Instructions](#setup-instructions)
+  - [To Run Notebooks Locally](#to-run-notebooks-locally)
+  - [To Run Notebooks on Google Colab](#to-run-notebooks-on-google-colab)
 6. [Contributing](#contributing)
-7. [Acknowledgements](#acknowledgements)
+7. [License](#license)
 8. [Contact](#contact)
-9. [License](#license)
 
 ## Overview
 
 This repository contains links to course slides hosted on a [Google Drive folder](https://drive.google.com/drive/folders/1-4AfC8c9T6JMUHEtFtCyKlLG3kGGERIL?usp=sharing), Jupyter notebooks and supporting materials for 2-day course on infrastructure mapping and analysis.
 
-The course covers an introduction to GIS systems, data standardization, visualization, coverage analysis, fiber path modeling, and cost estimation.
+The course will introduce the methodology used by the International Telecommunication Union (ITU) to measure gaps in ICT infrastructure and for connectivity business planning.  It aims to improve the theoretical and practical skills of participants in collecting ICT infrastructure data, identifying underserved areas, applying GIS tools, and using connectivity models to test and compare selected connectivity scenarios. 
+
+During practical hands-on sessions, participants will learn how to source and prepare their own data using data dictionaries and common standards. The sessions will cover topics such as exploratory data analysis, data validation, visualization, and more advanced topics like visibility analysis for point-to-point connectivity and fiber path analysis. The training will involve practical sessions where participants will gain hands-on experience using QGIS and Jupyter Notebooks, working through real-life case studies related to school connectivity.  
+
+## Data
+
+This course uses a case study of school connectivity in **Windhoek**, the capital of Namibia. While you'll learn to collect and process this data during the training, we provide pre-processed datasets at different stages to help you follow along.
+
+### Data Repository
+
+All training data is available in [this Google Drive folder](https://drive.google.com/drive/folders/1ANcLWuLDko8nnKuwaYU1S3QH8I8PIwT6?usp=drive_link), organized into the following subfolders:
+
+- **raw/**: Original data as downloaded from various sources, before any processing
+- **standardized/**: Cleaned and formatted data following ITU standards and data dictionaries, ready for analysis 
+- **outputs/**: Results from different analyses (proximity, coverage, demand, etc.)
+- **raster/**: Geographic raster files for elevation and population density
+
+<a href="https://ibb.co/8s8GT9K"><img src="https://i.ibb.co/jf4qBD6/windhoek-schools.png" alt="windhoek-schools" border="0"></a>
+
+_Figure: Query OpenStreetMaps using Overpass API_
+
+
+### Data Sources
+
+| Dataset | Source |
+|---------|--------|
+| School locations | OpenStreetMap |
+| Cell sites | OpenCellID |
+| Road network | OpenStreetMap |
+| Fiber/transmission nodes | Ookla Speedtest |
+| 4G mobile coverage | Operator data |
+| Population density | WorldPop |
+| Elevation data | SRTM/NASA |
+
+Each source has been chosen to provide reliable, up-to-date information while being representative of data you might use in real-world connectivity planning projects.
 
 ## Training agenda
 
-- **Slides:**
-    - **Day 1: Introduction to geospatial data:** Covers the basics of GIS, Python-based geospatial data processing, and visualizations with KeplerGL.
-        - [Introduction to Python and Google Colab](https://docs.google.com/presentation/d/1tEIVCvb1jg2W_CS8A1l6VXxEQgrczHV8/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Visualization with KeplerGL](https://docs.google.com/presentation/d/1_HZsWGcwOvX-Pa4kFjlvza4m0K311EP4/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Introduction to QGIS](https://docs.google.com/presentation/d/15INri2v9S72rlaeca5pQ1jSz4aRHX8na/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Introduction to working with geospatial data](https://docs.google.com/presentation/d/1xRUdM9k82wZLib_vweeiH3mF4XSlKmQp/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Projections and coordinate reference systems](https://docs.google.com/presentation/d/1PO7kVzpYnWp0P-H-1veo10Peu_fwoTwH/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Open geospatial data in telecommunications](https://docs.google.com/presentation/d/1nHZnf2F1kje_mxuW1e9UV-G02RBAb79Z/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [ICT data collection and processing](https://docs.google.com/presentation/d/1JBSYWGjTfd06zPZbCO7ZxUogQ3Y1F82C/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Quiz](https://www.mentimeter.com/app/presentation/alnt3kcapjfsshbb5vghyhfkdhv4jt7d/edit?source=share-invite-modal)
-    - **Day 2: Infrastructure analysis tools:** Explores advanced concepts such as network modeling, demand analysis, and cost estimation.
-        - [Network analysis](https://docs.google.com/presentation/d/1XAxjJScfZkU8KMzbHWv53H_FonTibvBu/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Demand analysis](https://docs.google.com/presentation/d/1f3eJDYS5WBYDcZyzOMgHA8HwQymqxkJH/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [ICT infrastructure business planning](https://docs.google.com/presentation/d/1s4rMN5QZQv5r3q9A2nSzQgWoARpcrp8_/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Fiber path analysis](https://docs.google.com/presentation/d/1t1SSuF3vlDaIvWTYrhOB3pWFfSYqPPRo/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Visibility analysis](https://docs.google.com/presentation/d/17q7peog0sNe90KYfLtQJmFi3YP-2iCu0/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Cost analysis](https://docs.google.com/presentation/d/1JvHnThJJXZyLwUU8cfL-0dFC3QUgLBVY/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true)
-        - [Quiz](https://www.mentimeter.com/app/presentation/alp66s3gqeyxokxjepj4gdno2duwmc38/edit?source=share-invite-modal)
-- **Jupyter Notebooks:**
-    - [`0_eda_standardization.ipynb`](0_eda_standardization.ipynb): Data exploration and standardization procedures
-    - [`1_proximity_coverage_demand.ipynb`](1_proximity_coverage_demand.ipynb): Analysis of coverage proximity and demand mapping
-    - [`2_visibility_analysis.ipynb`](2_visibility_analysis.ipynb): Visibility and line-of-sight analysis for network planning
-    - [`3_fiber_modeling.ipynb`](3_fiber_modeling.ipynb): Fiber network modeling and optimization
-    - [`4_cost_modelling.ipynb`](4_cost_modelling.ipynb): Cost estimation and financial modeling
+- **Day 1: Fundamentals of Geospatial Analysis**
+   - Introduction to QGIS [🔗](link/to/qgis): Get started with QGIS, a powerful open-source software for geospatial analysis that will be our main tool throughout the course.
+   - Geospatial Data Types [🔗](link/to/geodata): Master the fundamentals of vector, raster, and tabular data types, and understand when to use each format.
+   - Projections and Coordinate Systems [🔗](link/to/projections): Learn how to work with different map projections and coordinate systems to ensure accurate spatial analysis.
+   - Telecommunications Open Data [🔗](link/to/telecom): Discover various telecommunications data sources, their characteristics, and learn to evaluate their advantages and limitations.
+   - Practical Sessions:
+       - Open Data Collection [🔗](link/to/opendata): Master the tools and techniques for gathering telecommunications data from key sources like OpenStreetMap, GIGA Maps, and OpenCellID using APIs and QGIS plugins.
+       - Data Standardization [🔗](link/to/standards): Learn to prepare and clean data according to ITU Data Dictionaries standards using QGIS and SQL, ensuring it's ready for analysis.
+       - Proximity Analysis [🔗](link/to/proximity): Calculate distances between Points of Interest and existing infrastructure to help prioritize locations for infrastructure expansion and optimize deployment strategies. Creates graduated symbol maps showing distances to nearest infrastructure.
+       - Coverage Analysis [🔗](link/to/coverage): Map and analyze the geographic reach of existing mobile networks to identify areas with limited or no coverage. Generate coverage status maps by technology type (3G/4G/5G).
+       - Demand Analysis [🔗](link/to/demand): Calculate potential internet users and required throughput at each PoI using high-resolution population models that combine satellite imagery with census estimates. Includes analysis of population distribution within various buffer zones.
+   - Quizzes:
+       - Quiz on GIS and Data Sources [🔗](link/to/quiz1)
+       - Quiz on Proxiity, Coverage and Demand Analysis [🔗](link/to/quiz1)
 
-## Pre-requisites
+- **Day 2: Advanced Applications, Business Planning and Python Integration**
+   - ICT Infrastructure Business Planning [🔗](link/to/planning): Learn about business planning tools to evaluate the commercial viability of an ICT infrastructure project. This module shows how GIS tools are useful to extract the information that allows to compute the revenues and costs associated with a product.
+   - Practical Sessions:
+       - Visibility Analysis [🔗](link/to/visibility): Evaluate line-of-sight between cell sites and points of interest, considering terrain and physical obstructions. Learn to assess feasibility of radio links and identify optimal locations for infrastructure deployment.
+       - Fiber Path Analysis [🔗](link/to/fiber): Learn to design efficient fiber networks by leveraging existing infrastructure and optimizing routes for cost-effectiveness.
+       - Python & Google Colab Introduction [🔗](link/to/python): Learn about the Pros and Cons of using QGIS versus a programmatic approach using Python. Learn about using Google Colab to launch Jupyter notebooks, and discover the main Python libraries for working with geospatial data.
+       - Cost Analysis [🔗](cost_modelling.ipynb) using Jupyter notebook `cost_modelling.ipynb` running on Google Colab. Learn to evaluate different technology options (fiber, cellular, point-to-point and satellite) and optimize deployment costs using microeconomic data. Calculate CapEx, OpEx, and potential revenues for different connectivity solutions.
+       - KeplerGL Visualization [🔗](link/to/kepler): Learn how to produce appealling visualizations using the online version of KeplerGL, a powerful suite of open-source visualization tools.
+   - Quizzes:
+       - Quiz on Business Planning [🔗](link/to/quiz2)
+       - Quiz on Fiber Path and Visibility [🔗](link/to/quiz2)
 
-To run the Jupyter notebooks on **Google Colab**, you'll need:
-- A Google account (e.g. a Gmail account).
+## Prerequisites
 
-To run these notebooks **locally**, you'll need:
+### For Google Colab Users
+- A Google account (e.g., Gmail) to access Google Colab and training data
+- No additional software installation required
 
-- Python 3.9
+### For Local Setup
+- Python 3.11
 - Jupyter Notebook/Lab
+- QGIS version 3.34.9 'Prizren LTR' (Long-term release)
+ - Available for Windows, Mac, and Linux
+ - Required plugins:
+   - Open Topography DEM Downloader
+   - QNEAT3
+   - Visibility Analysis
+   - GRASS 8
+   - QuickMapServices
+   - QuickOSM
 
 ## Setup instructions
 
@@ -72,8 +125,8 @@ To run these notebooks **locally**, you'll need:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/sg-peytrignet/algeria24-training.git
-cd algeria24-training
+git clone https://github.com/FNS-Division/GIGA-mapping-training
+cd GIGA-mapping-training
 ```
 
 2. Create and activate the Conda environment:
@@ -98,10 +151,6 @@ All notebooks are created using Google Colab for easy accessibility. In order to
 
 <a href="https://colab.research.google.com/github/sg-peytrignet/algeria24-training/blob/main/3_fiber_modeling.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-## Usage notes
-
-Follow the notebooks in numerical order for the best learning experience.
-
 ## Contributing
 
 Please submit a pull request to contribute to this repository.
@@ -112,10 +161,4 @@ Please refer to our [license](LICENSE).
 
 ## Contact
 
-For questions or support, please create an issue in this repository or get in touch at fns@itu.int.
-
-## Acknowledgements
-
-We would like to thank South Korea's Ministry of Science and ICT for their support.
-
-![sponsor](https://i.ibb.co/tXQqP2S/image.jpg)
+For questions or support, please create an issue in this repository or get in touch at [fns@itu.int](fns@itu.int).
