@@ -86,7 +86,7 @@ Each source has been chosen to provide reliable, up-to-date information while be
        - **Demand Analysis** [🔗](https://docs.google.com/presentation/d/12pv-dvYFYnzKwcmNerMwRlf_CxJtuQ1S/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true): Calculate potential internet users and required throughput at each PoI using high-resolution population models that combine satellite imagery with census estimates. Includes analysis of population distribution within various buffer zones.
    - **Quizzes**:
        - Quiz on GIS and Data Sources [🔗](link/to/quiz1)
-       - Quiz on Proxiity, Coverage and Demand Analysis [🔗](link/to/quiz1)
+       - Quiz on Proximity, Coverage and Demand Analysis [🔗](link/to/quiz1)
 
 - **Day 2: Advanced Applications, Business Planning and Python Integration**
    - **ICT Infrastructure Business Planning** [🔗](https://docs.google.com/presentation/d/12vBrQtEw07phqu6Sbhiy_CRLFimHXTG5/edit?usp=drive_link&ouid=110166480978407115454&rtpof=true&sd=true): Learn about business planning tools to evaluate the commercial viability of an ICT infrastructure project. This module shows how GIS tools are useful to extract the information that allows to compute the revenues and costs associated with a product.
