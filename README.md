@@ -33,7 +33,7 @@ _Figure: Fiber path simulation in Windhoek, Namibia_
 
 ## Overview
 
-This repository contains links to course slides hosted on a [Google Drive folder](https://drive.google.com/drive/folders/1-4AfC8c9T6JMUHEtFtCyKlLG3kGGERIL?usp=sharing), Jupyter notebooks and supporting materials for 2-day course on infrastructure mapping and analysis.
+This repository contains links to course slides hosted on a [Google Drive folder](https://drive.google.com/drive/folders/1AEt-lrxRcV2G_SAfA0isPpj6omJ7M7Qr?usp=drive_link), Jupyter notebooks and supporting materials for 2-day course on infrastructure mapping and analysis.
 
 The course will introduce the methodology used by the International Telecommunication Union (ITU) to measure gaps in ICT infrastructure and for connectivity business planning.  It aims to improve the theoretical and practical skills of participants in collecting ICT infrastructure data, identifying underserved areas, applying GIS tools, and using connectivity models to test and compare selected connectivity scenarios. 
 
